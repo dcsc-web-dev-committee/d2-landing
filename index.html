@@ -3,23 +3,43 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>D2</title>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/foundation/5.5.1/css/foundation.min.css">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.1/css/foundation.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/daneden/animate.css/master/animate.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/app.css" />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
   </head>
   <body>
 
-    Hello World!
+    <div id="main">
+      <div id="sidebar">
+        Sidebar
+      </div>
+      <div id="content">
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.5.1/js/foundation.min.js"></script>
+        <div id="video" class="full-frame" shunt-frame>
+          <div id="video-container">
+            <video id="video-elem" autoplay loop muted>
+              <source iftype="video/mp4" src="assets/ideahack.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <div id="about" class="left-padded-frame" shunt-frame>
+          Content 2
+        </div>
+      
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.1/js/foundation.min.js"></script>
     <script src="js/shuntdiv.js"></script>
     <script src="js/init.js"></script>
     <script type="text/javascript">
       $(document).foundation();
+      document.getElementById('video-elem').play();
     </script>
   </body>
 </html>
