@@ -13,23 +13,66 @@
   <body>
 
     <div id="main">
-      <div id="sidebar">
-        Sidebar
-      </div>
       <div id="content">
 
-        <div id="video" class="full-frame" shunt-frame>
+        <div id="video" class="full-frame crop-frame" shunt-frame>
           <div id="video-container">
             <video id="video-elem" autoplay loop muted>
               <source iftype="video/mp4" src="assets/ideahack.mp4" type="video/mp4">
             </video>
           </div>
+
+          <div id="title-container" class="noselect">
+            <span id="title-d2">D2</span>
+            <br/>
+            <span id="title-full">Development<br/>&amp; Design</span>
+          </div>
+
+          <div id="summary-container" class="noselect">
+            <p>
+              Davis<br/>
+              36 Hours<br/>
+              Limitless Possibilities<br/>
+              Coming Soon
+            </p>
+          </div>
+
+          <i id="down" class="clickable fa fa-2x fa-angle-down"></i>
         </div>
 
-        <div id="about" class="left-padded-frame" shunt-frame>
-          Content 2
+        <div id="about" class="padded-frame" shunt-frame>
+          <i id="up" class="clickable fa fa-2x fa-angle-up"></i>
+
+          <p>
+            Lorem ipsum dolor sit amet, decore civibus accusamus sea ea, ne pri prima discere consetetur, in nam illum novum. Tantas nemore placerat ad vix. Dicant impetus iudicabit nec cu. Has cu odio vitae, cum falli deleniti ex. No habeo tantas ius.
+            <br/>
+            Nominavi eligendi ea mel, has reque nostro imperdiet ei. Et duo quando doctus convenire, vix probatus repudiare honestatis ad. Liber voluptaria nec id, mucius vidisse eu nam. Eum ludus utamur euripidis te, aperiam scriptorem an est.
+          </p>
+
+          <i id="down" class="clickable fa fa-2x fa-angle-down"></i>
         </div>
-      
+
+        <div id="subscribe" class="padded-frame" shunt-frame>
+          <i id="up" class="clickable fa fa-2x fa-angle-up"></i>
+
+          <div class="row collapse">
+            <div class="column medium-offset-3 medium-6">
+              <p>
+                Subscribe or die
+              </p>
+
+              <div class="row collapse">
+                <div class="column small-10">
+                  <input type="email" placeholder="email">
+                </div>
+                <div class="column small-2">
+                  <a class="button postfix">subscribe</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
 
@@ -39,7 +82,8 @@
     <script src="js/init.js"></script>
     <script type="text/javascript">
       $(document).foundation();
-      document.getElementById('video-elem').play();
+      if (!!(video = document.getElementById('video-elem')))
+          video.play();
     </script>
   </body>
 </html>
