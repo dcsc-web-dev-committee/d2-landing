@@ -6,7 +6,7 @@
                 enter_animation_name: 'fadeInUp',
                 exit_animation_function: 'cubic-bezier(.08,.98,.86,.99)',
                 enter_animation_function: 'cubic-bezier(.08,.98,.86,.99)',
-            }),   
+            }),
         new ShuntDiv.Transition('about', 'video', 'dualAnimateCss', 'keypress', {
                 key: 38,
                 exit_animation_name: 'fadeOutDown',
@@ -21,7 +21,7 @@
                 enter_animation_name: 'fadeInUp',
                 exit_animation_function: 'cubic-bezier(.08,.98,.86,.99)',
                 enter_animation_function: 'cubic-bezier(.08,.98,.86,.99)',
-            }),   
+            }),
         new ShuntDiv.Transition('about', 'video', 'dualAnimateCss', 'click', {
                 id: 'up',
                 exit_animation_name: 'fadeOutDown',
@@ -36,7 +36,7 @@
                 enter_animation_name: 'fadeInUp',
                 exit_animation_function: 'cubic-bezier(.08,.98,.86,.99)',
                 enter_animation_function: 'cubic-bezier(.08,.98,.86,.99)',
-            }),   
+            }),
         new ShuntDiv.Transition('about', 'video', 'dualAnimateCss', 'touchSwipe', {
                 swipe: 'down',
                 exit_animation_name: 'fadeOutDown',
